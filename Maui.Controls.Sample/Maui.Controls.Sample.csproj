@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<UseMaui>true</UseMaui>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<EnableDefaultXamlItems>false</EnableDefaultXamlItems>
+		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+		<EnableDefaultCssItems>false</EnableDefaultCssItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Maui.Controls.WPF\Maui.Controls.WPF.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Remove="MainPage.Xaml"></Page>
+		<MauiXaml Include="MainPage.Xaml"></MauiXaml>
+	</ItemGroup>
+
+</Project>

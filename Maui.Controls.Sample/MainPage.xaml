@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<maui:ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Maui.Controls.Sample.WPF"
+             x:Class="Maui.Controls.Sample.WPF.MainPage"                     
+             xmlns:maui="clr-namespace:Microsoft.Maui.Controls;assembly=Microsoft.Maui.Controls"  
+             xmlns:blazor="clr-namespace:Microsoft.AspNetCore.Components.WebView.Maui;assembly=Microsoft.AspNetCore.Components.WebView.Maui"
+             
+             >
+
+    <!--<local:WPFBlazorWebView x:Name="blazorWebView" HostPage="wwwroot/index.html">
+        <blazor:BlazorWebView.RootComponents>
+            <blazor:RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+        </blazor:BlazorWebView.RootComponents>
+    </local:WPFBlazorWebView>-->
+
+    <VerticalStackLayout>
+        <Label Text="Hello from WPF MAUI"></Label>
+    </VerticalStackLayout>
+    
+
+</maui:ContentPage>

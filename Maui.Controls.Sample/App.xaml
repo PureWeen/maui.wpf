@@ -1,0 +1,9 @@
+﻿<maui:MauiWPFApplication x:Class="Maui.Controls.Sample.WPF.Platform.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         
+             xmlns:maui="clr-namespace:Microsoft.Maui.Platform.WPF"                         
+             xmlns:local="clr-namespace:Maui.Controls.Sample.WPF">
+    <Application.Resources>
+         
+    </Application.Resources>
+</maui:MauiWPFApplication>
